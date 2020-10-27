@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+<!-- structure based on tinDog exercise -->
+
+<head>
+  <meta charset="utf-8">
+  <title>microMaker</title>
+
+  <!-- link to EMBEDDED bootstrap css as primary styling-->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- this placed after above : LOCAL STYLE SHEET WHEN OVERRIDE OF BOOTSTRAP IS WANTED -->
+    <link rel="stylesheet" href="css/styles.css">
+
+  <!-- ENBED MONTSERRAT AND UBUNTU GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900|Ubuntu" rel="stylesheet">
+
+  <!-- add script to get personal font kit from FONTAWESOME but use CDN instead -->
+    <!-- <script src="https://kit.fontawesome.com/657fa22898.js" crossorigin="anonymous"></script> -->
+
+  <!-- link for fontawesome bootstrap CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script> -->
+    <!-- these 3 lines add jquery so some of bootstrap works -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</head>
+
+<!-- See css - BODY is set to use embedded Montserrat font -->
+<body>
+
+  <!-- ========TITLE AND NAVBAR SECTION==========================================-->
+
+<section id="title">
+
+  <!-- add CONTAINER for this section -->
+  <!-- **** see styles.css for changes to standard parameters -->
+  <div class="container-fluid">
+
+          <!-- Nav Bar -->
+
+          <nav class = "navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+
+            <!-- brand is an item in navbar with no link -->
+            <a class="navbar-brand" href="">microMaker</a>
+
+            <!-- add the button so navbar items can collapse into it -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topNavbar" aria-controls="topNavbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- define collapsable navbar -->
+            <div class="collapse navbar-collapse" id="topNavbar">
+
+                <!-- define navbar items see css modified -->
+                <ul class = "navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="">Latest</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="">Recent</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="">Archive</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="">Reference</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="">Links</a>
+                  </li>
+                </ul>
+
+            </div>
+
+          </nav>
+
+        <!-- CREATE A FLEX BOX LAYOUT ROW  -->
+        <div class="row">
+          <!-- set div for text and buttons to be 50% on tablet and larger and 100% on anything smaller -->
+          <!-- **** see styles.css for changes to standard parameters -->
+          <!-- changed form course which had -6 as I have no picture -->
+          <div class="col-lg">
+            <!-- Add Title text and 2 link buttons -->
+            <h1>MCU and Electronic Module Testing</h1>
+
+            <!-- set classes for buttons based on default Bootstrap css-->
+            <!-- **** see styles.css for changes to standard parameters - changed width-->
+            <!-- FONTAWESOME ICONS USED IN FRONT OF TEXT-->
+            <!-- title-button class just modifies btn position -->
+            <!-- <i class="fas fa-cat"></i> -->
+
+            <button type="button" class="btn btn-dark btn-lg title-button"><i class="fas fa-dog"></i> Arduino</button>
+            <button type="button" class="btn btn-outline-dark btn-lg title-button"><i class="fas fa-cat"></i> Espressif</button>
+          </div>
+        </div>
+
+      <!-- set next div for img to be 50% on tablet and larger and 100% on anything smaller -->
+          <!-- <div class="col-lg-3 "> -->
+            <!-- Add image to div-->
+            <!-- <div class="rotate" > -->
+            <!-- <img class="title-image" src="images/systemImage.jpg" alt="systemImage.jpg"> -->
+            <!-- </div> -->
+
+          <!-- </div> -->
+        <!-- </div> -->
+
+    <!-- end of container div -->
+  </div>
+</section>
+
+  <!-- ========================END OF TITLE SECTION===================== -->
+
+
+
+
+<!-- ========= section from Bootstrap challenge 1 see also css file========== -->
+
+<section id="bootstrapCh1">
+  <!-- need the row div to get all items to flex -->
+ <div class="row">
+
+     <div class="col-lg-4 bsCh1-align">
+     <p class="bsCh1-icon"><i class="fas fa-check-circle fa-4x"></i></p>
+     <p class="bsCh1-line1">Easy to use</p>
+     <p class="bsCh1-line2">Get stuff tested - just sign-up!</p>
+    </div>
+
+
+    <div class="col-lg-4 bsCh1-align">
+        <p class="bsCh1-icon"><i class="fas fa-bullseye fa-4x"></i></p>
+        <p class="bsCh1-line1">Targetted Support</p>
+        <p class="bsCh1-line2">One-to-one-follow-up!</p>
+    </div>
+    <div class="col-lg-4 bsCh1-align">
+        <p class="bsCh1-icon"><i class="fas fa-car-battery fa-4x"></i></p>
+        <p class="bsCh1-line1">24/7 Contact</p>
+        <p class="bsCh1-line2">Available anytime!</p>
+    </div>
+
+
+ </div>
+</section>
+
+<!-- =================================================================== -->
+
+  <!--  ================"LATEST" SECTION showing BOOTSTRAP CAROUSEL================= -->
+
+  <section id="latest">
+    <h1 class="h1-latest">Latest Tests...</h1>
+      <!-- title that doesn't move -->
+      <div id="latest-carousel" class="carousel slide" data-interval="false">
+        <!-- these are indicators at bottom - need to manually inc/dec -->
+        <ol class="carousel-indicators">
+           <li data-target="#latest-carousel" data-slide-to="0" class="active"></li>
+           <li data-target="#latest-carousel" data-slide-to="1"></li>
+           <li data-target="#latest-carousel" data-slide-to="2"></li>
+        </ol>
+            <!-- carousel content - first item set to 'active' -->
+            <div class="carousel-inner">
+              <div class="carousel-item active" >
+                <h2>1.3" OLED I2C 128x64 SH1106</h2>
+                <img class="latest-image" src="images/1-3oled128x64.jpg"  alt="oled">
+                    <!-- add caption  d-md-block stops showing on small devices-->
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>£2.99</h5>
+                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                  </div>
+              </div>
+              <div class="carousel-item" >
+                <h2>2.8" SPI TFT</h2>
+                <img class="latest-image" src="images/2-8TFTTouch.jpg" alt="touch">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>£150.99</h5>
+                  <p>a pharetra augue mollis interdum.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <h2>16x2 LCD</h2>
+                <img class="latest-image" src="images/16x2_LCD_HD44780.jpg" alt="lcd">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>£200.00</h5>
+                  <p>Nulla vitae elit libero</p>
+                </div>
+              </div>
+              <!-- end of carousel inner -->
+            </div>
+            <!-- add carousel prev-next buttons -->
+            <a class="carousel-control-prev" href="#latest-carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon"</span>
+            </a>
+            <a class="carousel-control-next" href="#latest-carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon"</span>
+            </a>
+      <!-- end of latest-carousel div-->
+     </div>
+  <!-- end of "latest" section -->
+</section>
+<!-- ================================================================================= -->
+
+<!-- this section structur adds 3 cards equi-spaced to viewport -->
+
+<section id="cardsSection">
+  <h1 class="cardsSection-h1">Sign-Up to get Testing Services ...</h1>
+
+  <div class="container-fluid">
+    <!-- this versions puts all cards nto a deck -->
+    <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Free</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">£0 <small class="text-muted">/ mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>1 device/ yr</li>
+              <li>Public Report</li>
+              <li>Email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="btn btn-lg btn-block btn-outline-primary">Free sign-up</button>
+          </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Pro</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">£15 <small class="text-muted">/ mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>1 device/ mo</li>
+              <li>Private Report</li>
+              <li>Priority email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+          </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Enterprise</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">£29 <small class="text-muted">/ mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>4 devices/ mo</li>
+              <li>Private Report</li>
+              <li>Direct Access Support</li>
+              <li>Help center access</li>
+            </ul>
+            <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
+          </div>
+      </div>
+    </div>
+
+
+  <!-- end of container-fluid div -->
+  </div>
+  <!-- end of cardsSection div -->
+</div>
+</section>
+<!-- ================================================================================= -->
+
+<!-- this section structure adds cards that collapse grid-based cards -->
+<!-- on lg screen all cards take up 4 cols equal -->
+<!-- on md ipad screen,  top 2 cards take up50% (6 cols)  cols equal  -->
+<!-- 3rd card takes up full width on md and small (not spec'd so = 100%)-->
+<section id="cardsGridSection">
+  <h1 class="cardsSection-h1">Sign-Up to get Testing Services ...</h1>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">header</h4>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-block btn-outline-danger">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">header</h4>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-block btn-warning">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">header</h4>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-block btn-success">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+</body>
+
+</html>

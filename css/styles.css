@@ -1,0 +1,183 @@
+
+body
+    {
+       font-family: 'Ubuntu';
+    }
+
+.btn-lg{
+  width: 150px;
+}
+
+/* =====bootstrap challenge 1 with icons section===== */
+#bootstrapCh1
+  {
+    /* font-weight: bold; */
+    text-align: center;
+    font-family: 'Montserrat';
+    padding:7% 15%;
+    /* background-color: #D9E4DD; */
+  }
+
+.bsCh1-align
+{
+  text-align:center;
+  padding: 5%;
+}
+
+
+.bsCh1-icon
+{
+  margin-bottom: 0;
+  color:#68b0ab;
+}
+
+.bsCh1-icon:hover
+{
+  color:#0E918C;
+}
+
+.bsCh1-line1
+{
+  font-weight:600;
+  font-size: 1.6rem;
+  margin-bottom: 0.2rem;
+}
+
+.bsCh1-line2
+{
+  font-weight:lighter;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+/* =================================================== */
+.col-lg
+    {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+.container-fluid
+    {
+      /* add 3% to top and bottom and 10% toleft and right */
+      padding: 3% 5%;
+    }
+
+h1
+    {
+      font-family: 'Montserrat';
+      font-weight:900;
+      font-size: 2.5rem;
+      line-height: 1.5;
+    }
+
+/* ----latest section----- */
+#latest
+    {
+    /* padding: 7% 15%; */
+    background-color: #68b0ab;
+    text-align: center;
+
+    }
+
+.h1-latest
+{
+  font-family: 'Montserrat';
+  font-weight:400;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  color: white;
+  padding-top: 2% ;
+}
+
+.carousel-item
+{
+/* color:#0E918C; */
+color:white;
+}
+
+.latest-image
+{
+padding: 3% 5%;
+}
+
+.carousel-caption
+{
+  position:relative;
+  right: 0;
+  left: 0;
+}
+
+#cardsSection
+{
+  text-align:center;
+
+}
+
+.cardsSection-h1
+{
+  font-family: 'Montserrat';
+  font-weight:400;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  color: #68b0ab;
+  padding-top:2%;
+}
+
+
+#cardsGridSection
+{
+  text-align:center;
+  padding: 3% 5%;
+}
+
+/* modify std card parameter */
+.card{
+  margin: 3% 0;
+}
+
+.navbar
+    {
+      padding:1.5rem 0  1.5rem 0;
+    }
+
+.navbar-brand
+    {
+      font-family:"Ubuntu";
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+  .nav-link
+    {
+      font-family: "Montserrat";
+
+    }
+
+.row
+    {
+      margin-left: 0;
+    }
+
+/* ==section constructors are accessed using # rather than .  */
+
+#title
+  {
+    background-color: #D9E4DD;
+    color: #0E918C;
+  }
+
+.title-button
+  {
+    margin: 5% 3% 5% 0;
+  }
+
+.title-image
+  {
+    width:100%;
+    background-color: transparent;
+    /* outline: 2px dashed; */
+    float:right;
+    /* transform: rotate(25deg); */
+    margin:80px 50px 50px 0;
+  }
